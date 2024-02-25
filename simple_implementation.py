@@ -61,7 +61,7 @@ def generate_summary(input_folder_path, output_folder_path, num_sentences=3):
                     file_summary += f"Summary for label '{label}':\n{label_summary}\n\n"
 
                 # Write the file summary to a file in the output folder
-                output_file_path = os.path.join(output_folder_path, f"{filename.split('.')[0]}_summary.txt")
+                output_file_path = os.path.join(output_folder_path, f"{filename.split('.')[0]}.txt")
                 with open(output_file_path, 'w') as output_file:
                     output_file.write(file_summary)
 

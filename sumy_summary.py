@@ -19,7 +19,7 @@ def summarize_file(input_file_path, output_folder_path, num_sentences=3):
     summarizer = LsaSummarizer()
 
     file_name = os.path.basename(input_file_path)
-    output_file_path = os.path.join(output_folder_path, f"{file_name.split('.')[0]}_summary.txt")
+    output_file_path = os.path.join(output_folder_path, f"{file_name.split('.')[0]}.txt")
 
     with open(output_file_path, 'w') as output_file:
         for label, sentences in sentences_by_label.items():
